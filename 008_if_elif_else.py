@@ -14,12 +14,12 @@ print(calificacion)
 
 variable = 19
 
-if variable:
+if variable:   #Es una simplificación de == True
 	print("Contiene información")
 else:
     print("No contiene información")
     
-    
+
 #En este ejemplo sí evalúa un boleano
 
 variable = 19
@@ -35,9 +35,9 @@ edad=int(input("Introduce edad: "))
 
 if edad<18:
 	print("No puedes pasar")
-elif edad>100:
+elif edad>100: # Podemos tener los elif que necesitemos 
 	print("Edad incorrecta")
-else:
+else: # Un unico else final si no se cumplen las anteriores se ejecuta esta última linea
 	print("Adelante")
 
 #   Programa que pide una nota por consola y valora las posibles calificaciones del alumno.
@@ -54,25 +54,29 @@ else:
     print("Sobresaliente")
 
 
-#   IF abreviado
-n_num1 = 5
+# IF abreviado
+n_num1 = 5 # n_ indica que la variable es de tipo númerico, b_ booleano, s_ streing 
 n_num2 = 10
 if n_num1 > n_num2: print(n_num1 , "es mayor que" , n_num2)
 
-#   IF...ELSE abreviado
+# Sino se cumple el if no hace nada más... 
+
+# IF...ELSE abreviado
 a = 2
 b = 330
 print("A") if a > b else print("B")
 
-#   Se pueden concatenar operadores de comparación:
+# Cambia el orden del print y el if
+
+# Se pueden concatenar operadores de comparación:
 
 edad=117
-if 0<edad<100:	# Sería como poner: if edad>0 and edad<100	
+if 0<edad<100:	# Sería como poner: if edad>0 and edad<100.
 	print("Edad correcta")
 else:
 	print("Edad incorrecta")
  
- #      Otro ejemplo de operadores de comparación concatenados
+ # Otro ejemplo de operadores de comparación concatenados
  
 salarioPresidente = int(input("Introduce salario presidente: "))
 print("El salario del presidente es de" , salarioPresidente)
@@ -91,7 +95,7 @@ if salarioOperario<salarioJefe<salarioDirector<salarioPresidente:
 else:
 	print("Algo no va bien")
 
-#       Operadores AND y OR
+# Operadores AND y OR # OR se bebe cumplir una de las condiciones, AND se debe cumplir las condiciones especificadas. 
 distancia = int(input("Introduce distancia: "))
 numHermanos = int(input("Introduce número de hermanos en el centro: "))
 notaMedia = int(input("Introduce notaMedia: "))
@@ -101,7 +105,7 @@ if distancia>20 or numHermanos<2 or notaMedia<=5:
 else:
 	print("Sí eres candidato a la beca")
 
-#   Operador IN
+# Operador IN
 
 opcion = input("ELige opcion: opcion1, opcion2, opcion3, opcion4: ")
 pasoMinusculas = opcion.lower()
